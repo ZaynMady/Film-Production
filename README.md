@@ -3,14 +3,14 @@ Film Production Backend in Python and Database Design
 
 # Sql Folder
 
-Inside the SQL folder are three files, create_python_database.sql is the file that the python program calls to create the database, extract_data.sql has some select statements that extract some data and analytics from the database and the create_database.sql is the same as create_python_database but with comments that explains all the tables and triggers used in the design of the database
+Inside the SQL folder are three files, create_python_database.sql is the file that the python program calls to create the database, extract_data.sql has some select statements that extract some data and analytics from the database and the create_database.sql is the same as create_python_database but with comments that explain all the tables and triggers used in the design of the database
 
 # The Python File 
 
-The Python file contains basically three sections 
+The Python file contains three sections 
 
 **1 The Projects section:**  
-the projects section contains the three main functions which create, open and delete a project, the first two return a sqlalchemy connection in which all later functions use
+the projects section contains the three main functions which create, open, and delete a project, the first two return a sqlalchemy connection in which all later functions use
 
 **2. the main add and delete functions section**
 
