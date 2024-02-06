@@ -109,8 +109,13 @@ def delete_row(table_name: str, conn: sqlalchemy.Connection, **kwargs):
         elif type(value) is int:
             sqlquery = f"DELETE FROM {table_name} WHERE {column} = {value}"
         else: raise TypeError("Incorrect Data Type")
-        conn.execute(sqlalchemy.text(sqlquery))
-        conn.commit()
+        try:
+            conn.execute(sqlalchemy.text(sqlquery))
+            conn.commit()
+        except exc.OperationalError:
+            print("Error: The column  you have entered does not exist")
+        except exc.ProgrammingError:
+            print("Error: The Table you have entered does not exist")
     else:
         raise TypeError("too many arguments passed, please enter only one column name")
 
