@@ -3,7 +3,7 @@ Film Production Backend in Python and Database Design
 
 # Sql Folder
 
-Inside the Sql Folder is two files, the first being the file in which the python program calls to create the database and the other one has some select statements that extracts some data from the database
+Inside the SQL folder are three files, create_python_database.sql is the file that the python program calls to create the database, extract_data.sql has some select statements that extract some data and analytics from the database and the create_database.sql is the same as create_python_database but with comments that explains all the tables and triggers used in the design of the database
 
 # The Python File 
 
